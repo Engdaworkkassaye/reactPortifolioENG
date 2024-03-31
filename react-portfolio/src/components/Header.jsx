@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../App.css"
 
 function Header({ brandName, imageSrcPath, navItems }) {
+  const [selectedItem, setSelectedItem] = useState(0);
+
+  const handleItemClick = (index) => {
+    setSelectedItem(index);
+  };
+
   return (
     <nav className="navbar navbar-expand-md navbar-light bg-white shadow">
       <div className="container-fluid">
@@ -29,8 +35,14 @@ function Header({ brandName, imageSrcPath, navItems }) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-md-1"> 
             {navItems.map((item, index) => (
-              <li key={index} className="nav-item">
-                <a className="nav-link" href="#">{item}</a>
+              <li key={index} className={`nav-item ${index === selectedItem ? 'selected' : ''}`}>
+                <a 
+                  className="nav-link" 
+                  href="#" 
+                  onClick={() => handleItemClick(index)}
+                >
+                  {item}
+                </a>
               </li>
             ))}
           </ul>

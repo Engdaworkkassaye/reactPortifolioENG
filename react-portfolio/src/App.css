@@ -60,3 +60,16 @@
   display: block;
   margin: 0 auto 30px; 
 }
+
+.nav-item.selected a.nav-link {
+  color: rgb(36, 17, 205); 
+  font-weight: bold;
+}
+
+.nav-item.selected:hover {
+  background-color: #0056b3;
+}
+
+.nav-item.selected:focus {
+  outline: none; 
+}

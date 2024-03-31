@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import AboutMe from './components/AboutMe';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import logo from './assets/logo.jpeg';
+import logo from './assets/logo.jpg';
 
 const App = () => {
   const brandName = "Engdawork Kassaye";
