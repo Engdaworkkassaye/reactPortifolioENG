@@ -1,17 +1,12 @@
-import React, { useState } from 'react';
-import "../App.css"
+import React from 'react';
+import { Link } from 'react-router-dom';
+import "../App.css";
 
 function Header({ brandName, imageSrcPath, navItems }) {
-  const [selectedItem, setSelectedItem] = useState(0);
-
-  const handleItemClick = (index) => {
-    setSelectedItem(index);
-  };
-
   return (
     <nav className="navbar navbar-expand-md navbar-light bg-white shadow">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           <img
             src={imageSrcPath}
             width="60"
@@ -20,7 +15,7 @@ function Header({ brandName, imageSrcPath, navItems }) {
             alt=""
           />
           <span className="fw-bolder fs-4">{brandName}</span>
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -35,14 +30,13 @@ function Header({ brandName, imageSrcPath, navItems }) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-md-1"> 
             {navItems.map((item, index) => (
-              <li key={index} className={`nav-item ${index === selectedItem ? 'selected' : ''}`}>
-                <a 
+              <li key={index} className="nav-item">
+                <Link 
                   className="nav-link" 
-                  href="#" 
-                  onClick={() => handleItemClick(index)}
+                  to={`/${item.toLowerCase()}`} 
                 >
                   {item}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
