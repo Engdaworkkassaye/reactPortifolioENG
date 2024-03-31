@@ -40,3 +40,23 @@
 .read-the-docs {
   color: #888;
 }
+.navbar-nav .nav-item .nav-link:hover {
+  color: black; 
+  background-color: #f0f0f0;
+}
+.container-fluid {
+  width: 100%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.about-me {
+  padding: 50px 0; 
+}
+
+.about-me-logo {
+  width: 100%;
+  max-width: 300px; 
+  display: block;
+  margin: 0 auto 30px; 
+}

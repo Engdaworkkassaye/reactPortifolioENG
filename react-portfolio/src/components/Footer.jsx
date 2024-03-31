@@ -2,9 +2,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer>
-      <p>Connect with me:</p>
-    
+    <footer className="bg-secondary py-3">
+        <p className="text-light">Connect with me:</p>
     </footer>
   );
 };
