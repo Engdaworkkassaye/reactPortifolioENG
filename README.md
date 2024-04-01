@@ -37,7 +37,7 @@ To run the Weather App locally on your machine, follow these steps:
    yarn run dev
    ```
 
-5. Open your web browser and navigate to `http://localhost:3000` to view the Weather App.
+5. Open your web browser and navigate to `http://localhost:3000` to view the Portfolio App.
 
 
 ## Technologies Used
