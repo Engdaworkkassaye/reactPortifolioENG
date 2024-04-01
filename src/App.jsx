@@ -12,7 +12,7 @@ import './App.css';
 import logo from './assets/logo.jpg';
 
 const App = () => {
-  const brandName = "Engdawork Kassaye";
+  const brandName = "Engdawork K";
   const imageSrcPath = logo;
   const navItems = ["About", "Portfolio", "Contact", "Resume"];
 

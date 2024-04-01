@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ProgressBar = ({ proficiency, percentage }) => {
+const ProgressBar = ({ proficiency, percentage, color }) => {
   return (
     <div className="progress">
-      <div className="progress-bar" role="progressbar" style={{ width: `${percentage}%` }} aria-valuenow={percentage} aria-valuemin="0" aria-valuemax="100">{proficiency}</div>
+      <div className="progress-bar" role="progressbar" style={{ width: `${percentage}%`, backgroundColor: color }} aria-valuenow={percentage} aria-valuemin="0" aria-valuemax="100">{proficiency}</div>
     </div>
   );
 };
@@ -15,35 +15,41 @@ const Resume = () => {
       <p>Download my resume: <a href="./assets/Resume.pdf" download>Download</a></p>
       <div className="row">
         <div className="col-lg-6">
-          <h3>Proficiencies:</h3>
-          <div className="mb-3">
-            <ProgressBar proficiency="HTML" percentage={90} />
-          </div>
-          <div className="mb-3">
-            <ProgressBar proficiency="CSS" percentage={85} />
-          </div>
-          <div className="mb-3">
-            <ProgressBar proficiency="JavaScript" percentage={80} />
-          </div>
-          <div className="mb-3">
-            <ProgressBar proficiency="TailWind CSS" percentage={90} />
-          </div>
-          <div className="mb-3">
-            <ProgressBar proficiency="Express" percentage={90} />
+          <div className="card border-primary mb-4">
+            <div className="card-body">
+              <h3 className="card-title">Proficiencies:</h3>
+              <div className="mb-3">
+                <ProgressBar proficiency="HTML" percentage={100} color="#f39c12" />
+              </div>
+              <div className="mb-3">
+                <ProgressBar proficiency="CSS" percentage={85} color="#3498db" />
+              </div>
+              <div className="mb-3">
+                <ProgressBar proficiency="JavaScript" percentage={70} color="#27ae60" />
+              </div>
+              <div className="mb-3">
+                <ProgressBar proficiency="TailWind CSS" percentage={100} color="#9b59b6" />
+              </div>
+              <div className="mb-3">
+                <ProgressBar proficiency="Express" percentage={90} color="#e74c3c" />
+              </div>
+            </div>
           </div>
         </div>
         <div className="col-lg-6">
-          <h3>Experience:</h3>
-          <div>
-            <h4>MOU</h4>
-            <p>Software Development Student</p>
-            <p>June 2023 - Present</p>
-            <ul>
-              <li>Developed and maintained web applications using technologies such as HTML, CSS, JavaScript, and React.</li>
-              <li>Worked with server-side technologies including Node.js, Express.js, and MongoDB.</li>
-              <li>Implemented RESTful APIs for client-server communication.</li>
-              <li>Utilized version control systems like Git for collaborative development.</li>
-            </ul>
+          <div className="card border-secondary mb-4">
+            <div className="card-body">
+              <h3 className="card-title">Experience:</h3>
+              <h4>MOU</h4>
+              <p>Software Development Student</p>
+              <p>June 2023 - Present</p>
+              <ul>
+                <li>Developed and maintained web applications using technologies such as HTML, CSS, JavaScript, and React.</li>
+                <li>Worked with server-side technologies including Node.js, Express.js, and MongoDB.</li>
+                <li>Implemented RESTful APIs for client-server communication.</li>
+                <li>Utilized version control systems like Git for collaborative development.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
