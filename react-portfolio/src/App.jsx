@@ -5,6 +5,8 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
+import Contact from './components/Contact';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import logo from './assets/logo.jpg';
@@ -26,6 +28,8 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
+
 
 
           </Routes>
