@@ -60,7 +60,7 @@ const PortfolioPage = () => {
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <div className="button-container">
-                <a href={project.githubLink} className="btn btn-secondary">GitHub</a>
+                <a href={project.githubLink} target="_blank" className="btn btn-secondary">GitHub</a>
               </div>
             </div>
           ))}
