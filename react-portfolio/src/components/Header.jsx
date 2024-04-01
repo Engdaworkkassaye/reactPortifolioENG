@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Navbar, Container, Nav } from 'react-bootstrap'; // Import Bootstrap components
 import "../App.css";
 
 function Header({ brandName, imageSrcPath, navItems }) {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleToggle = () => {
+    setExpanded(!expanded);
+  };
+
+  const handleSelect = () => {
+    setExpanded(false);
+  };
+
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-white shadow">
-      <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
+    <Navbar expand="md" bg="white" variant="light" className="shadow" expanded={expanded}>
+      <Container>
+        <Link className="navbar-brand" to="/" onClick={handleSelect}>
           <img
             src={imageSrcPath}
             width="60"
@@ -16,33 +27,23 @@ function Header({ brandName, imageSrcPath, navItems }) {
           />
           <span className="fw-bolder fs-4">{brandName}</span>
         </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto mb-2 mb-md-1"> 
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={handleToggle} />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto mb-2 mb-md-1">
             {navItems.map((item, index) => (
-              <li key={index} className="nav-item">
+              <Nav.Item key={index} onClick={handleSelect}>
                 <Link 
                   className="nav-link" 
                   to={`/${item.toLowerCase()}`} 
                 >
                   {item}
                 </Link>
-              </li>
+              </Nav.Item>
             ))}
-          </ul>
-        </div>
-      </div>
-    </nav>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
