@@ -1,7 +1,5 @@
 # Protfolio Web App
 
-![Portfolio App](https://via.placeholder.com/300x200)
-
 Portfolio App is a web application designed to showcase your projects, skills, and experience in an attractive and professional manner.
 
 
