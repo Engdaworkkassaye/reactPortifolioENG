@@ -18,7 +18,7 @@ To run the Weather App locally on your machine, follow these steps:
 2. Navigate to the project directory:
 
    ```bash
-   cd Weatherapi
+   cd reactPortifolioENG
    ```
 
 3. Install dependencies using npm or yarn:
@@ -46,15 +46,6 @@ To run the Weather App locally on your machine, follow these steps:
 - HTML5
 - CSS3
 - Bootstrap
-## Contributing
-
-Contributions are welcome! If you'd like to contribute to the Weather App project, please follow these steps:
-
-1. Fork the repository on GitHub.
-2. Create a new branch.
-3. Make your changes.
-4. Commit your changes and push to your fork.
-5. Submit a pull request with a detailed explanation of your changes.
 
 ## License
 
