@@ -25,7 +25,6 @@ const Resume = () => {
           <div className="mb-3">
             <ProgressBar proficiency="JavaScript" percentage={80} />
           </div>
-          {/* Add more proficiencies as needed */}
         </div>
         <div className="col-lg-6">
           <h3>Experience:</h3>
@@ -38,10 +37,8 @@ const Resume = () => {
               <li>Worked with server-side technologies including Node.js, Express.js, and MongoDB.</li>
               <li>Implemented RESTful APIs for client-server communication.</li>
               <li>Utilized version control systems like Git for collaborative development.</li>
-              {/* Add more bullet points */}
             </ul>
           </div>
-          {/* Add more experience sections as needed */}
         </div>
       </div>
     </div>

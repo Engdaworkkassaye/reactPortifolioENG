@@ -22,7 +22,6 @@ const Contact = () => {
     }
     setErrors(errors);
     if (Object.keys(errors).length === 0) {
-      // Perform form submission or any other action
     }
   };
 
