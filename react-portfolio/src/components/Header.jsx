@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Navbar, Container, Nav } from 'react-bootstrap'; // Import Bootstrap components
+import { Link, NavLink } from 'react-router-dom';
+import { Navbar, Container, Nav } from 'react-bootstrap';
 import "../App.css";
 
 function Header({ brandName, imageSrcPath, navItems }) {
@@ -32,12 +32,13 @@ function Header({ brandName, imageSrcPath, navItems }) {
           <Nav className="ms-auto mb-2 mb-md-1">
             {navItems.map((item, index) => (
               <Nav.Item key={index} onClick={handleSelect}>
-                <Link 
+                <NavLink 
                   className="nav-link" 
                   to={`/${item.toLowerCase()}`} 
+                  activeClassName="active" // Add activeClassName
                 >
                   {item}
-                </Link>
+                </NavLink>
               </Nav.Item>
             ))}
           </Nav>
