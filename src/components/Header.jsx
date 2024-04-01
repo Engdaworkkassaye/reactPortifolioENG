@@ -35,7 +35,7 @@ function Header({ brandName, imageSrcPath, navItems }) {
                 <NavLink 
                   className="nav-link" 
                   to={`/${item.toLowerCase()}`} 
-                  activeClassName="active" // Add activeClassName
+                  style={window.location.pathname === `/${item.toLowerCase()}` ? { color: 'green' } : null}
                 >
                   {item}
                 </NavLink>
