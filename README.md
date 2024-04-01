@@ -46,14 +46,15 @@ To run the Weather App locally on your machine, follow these steps:
 - HTML5
 - CSS3
 - Bootstrap
+- Vite
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
 
-## Demo
+## Deployed app
 
-[Demo](https://darling-alpaca-fcf2ef.netlify.app/).
+[Click here to see deployed app on netlify](https://darling-alpaca-fcf2ef.netlify.app/).
 
 ## Contact
 
