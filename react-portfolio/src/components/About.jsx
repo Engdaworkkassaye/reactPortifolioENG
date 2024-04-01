@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../assets/logo.jpg'; 
 
-const AboutMe = () => {
+const About = () => {
   return (
     <section className="about-me">
         <div className="row">
@@ -25,4 +25,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default About;
