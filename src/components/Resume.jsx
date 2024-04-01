@@ -39,9 +39,8 @@ const Resume = () => {
         <div className="col-lg-6">
           <div className="card border-secondary mb-4">
             <div className="card-body">
-              <h3 className="card-title">Experience:</h3>
-              <h4>MOU</h4>
-              <p>Software Development Student</p>
+              <h3 className="card-title">Education:</h3>
+              <p>Software Development Student, MOU</p>
               <p>June 2023 - Present</p>
               <ul>
                 <li>Developed and maintained web applications using technologies such as HTML, CSS, JavaScript, and React.</li>
