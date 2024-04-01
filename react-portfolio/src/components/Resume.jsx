@@ -12,7 +12,7 @@ const Resume = () => {
   return (
     <div className="container" style={{ paddingTop: '100px', paddingBottom: '100px' }}>
       <h2>Resume</h2>
-      <p>Download my resume: <a href="/path/to/resume.pdf" download>Download</a></p>
+      <p>Download my resume: <a href="./assets/Resume.pdf" download>Download</a></p>
       <div className="row">
         <div className="col-lg-6">
           <h3>Proficiencies:</h3>
@@ -25,13 +25,19 @@ const Resume = () => {
           <div className="mb-3">
             <ProgressBar proficiency="JavaScript" percentage={80} />
           </div>
+          <div className="mb-3">
+            <ProgressBar proficiency="TailWind CSS" percentage={90} />
+          </div>
+          <div className="mb-3">
+            <ProgressBar proficiency="Express" percentage={90} />
+          </div>
         </div>
         <div className="col-lg-6">
           <h3>Experience:</h3>
           <div>
-            <h4>Company Name</h4>
-            <p>Full Stack Developer</p>
-            <p>June 2019 - Present</p>
+            <h4>MOU</h4>
+            <p>Software Development Student</p>
+            <p>June 2023 - Present</p>
             <ul>
               <li>Developed and maintained web applications using technologies such as HTML, CSS, JavaScript, and React.</li>
               <li>Worked with server-side technologies including Node.js, Express.js, and MongoDB.</li>
